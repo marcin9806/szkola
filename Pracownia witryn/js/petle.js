@@ -151,7 +151,7 @@ elPrzycisk.onclick=function()
 
 //foreach
 
-var tab=["Anna","Jacek","Janusz","Adrian"];
+/*var tab=["Anna","Jacek","Janusz","Adrian"];
 
 for(var i=0;i<=tab.length-1;i++)
 {
@@ -163,4 +163,4 @@ function p(a,b)
     document.write(a+" ");
 }
 
-tab.forEach(p);
+tab.forEach(p);*/
