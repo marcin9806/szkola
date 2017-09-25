@@ -42,12 +42,57 @@ var elAuto1Czerwone=document.querySelector("li.czerwony");
 elAuto1.style.color="green";
 elAuto1Czerwone.style.textDecoration="underline";
 
-document.getElementById="przycisk".onclick=function()
+var elPrzycisk=document.getElementById("przycisk");
+var elKlub=document.getElementsByName("sport");
+
+function zmien(element, indeks)
 {
-    var elAuta=document.getElementsByTagName("li");
-    console.log(elAuta);
-    for(var i=0;i<elAuta.length;i++)
-    {
-        elAuta[i].className="czerwony";
-    }
+    elKlub[indeks].className="niebieski";
 }
+elPrzycisk.onclick = function(){elKlub.forEach(zmien);}
+
+/*elPrzycisk.onclick=function()
+{
+    console.log(elKlub[2]);
+    for(var i=0;i<klub.length;i++)
+    {
+        elKlub[i].className="niebieski";
+    }
+}*/
+
+//previousElementSibling, nextElementSibling
+
+var poczatekElement=document.getElementById("s2");
+var poprzedniElement=poczatekElement.previousElementSibling;
+var nastepnyElement=poczatekElement.nextElementSibling;
+poprzedniElement.className="niebieski";
+nastepnyElement.className="niebieski";
+
+//firstChild, lastChild
+
+
+/*
+var lista=document.getElementsByTagName("ul")[1];
+console.log(lista);
+pierwszy=lista.firstElementChild
+ostatni=lista.lastElementChild
+pierwszy.setAttribute("class","czerwony");
+ostatni.setAttribute("style","text-decoration: underline;");*/
+
+
+
+text=document.getElementsByTagName("input")[1];
+link=document.getElementsByTagName("a")[0];
+text.setAttribute("type","button");
+text.setAttribute("value","Wyślij");
+text.onclick=function(){link.setAttribute("href","http://zsk.poznan.pl/");}
+
+
+
+
+
+
+
+
+
+

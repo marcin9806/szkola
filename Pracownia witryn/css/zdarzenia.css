@@ -1,0 +1,13 @@
+body
+{
+    background-color: #1a1e1e;
+    color: white;
+}
+fieldset
+{
+    display: inline-block;
+}
+#blok
+{
+    color: red;
+}
