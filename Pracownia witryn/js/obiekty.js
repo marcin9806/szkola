@@ -73,7 +73,8 @@ console.log(platnosci.pokoj3.length);
 //stwórz metodę która wyświetli sumę wszystkich płatności ze wszystkich pokojów.
 
 //konstruktory
-function Auto(){
+function Auto()
+{
     this.marka="Ferrari";
     this.model="f400";
 }
